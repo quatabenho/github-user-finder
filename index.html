@@ -42,6 +42,69 @@
             <span id="errorText"></span>
         </div>
 
+        <div id="userCard" class="user-card" style="display: none;">
+            <div class="user-header">
+                <img id="userAvatar" src="" alt="Avatar" class="user-avatar">
+                <div class="user-info">
+                    <h2 id="userName" class="user-name"></h2>
+                    <p id="userLogin" class="user-login"></p>
+                    <p id="userBio" class="user-bio"></p>
+                </div>
+            </div>
+
+            <div class="user-stats">
+                <div class="stat-item">
+                    <i class='bx bx-book-bookmark'></i>
+                    <div class="stat-info">
+                        <span class="stat-value" id="userRepos">0</span>
+                        <span class="stat-label">Repositories</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class='bx bx-user-plus'></i>
+                    <div class="stat-info">
+                        <span class="stat-value" id="userFollowers">0</span>
+                        <span class="stat-label">Followers</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class='bx bx-user-check'></i>
+                    <div class="stat-info">
+                        <span class="stat-value" id="userFollowing">0</span>
+                        <span class="stat-label">Following</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="user-details">
+                <div class="detail-row" id="locationRow" style="display: none;">
+                    <i class='bx bx-map'></i>
+                    <span id="userLocation"></span>
+                </div>
+                <div class="detail-row" id="companyRow" style="display: none;">
+                    <i class='bx bx-buildings'></i>
+                    <span id="userCompany"></span>
+                </div>
+                <div class="detail-row" id="blogRow" style="display: none;">
+                    <i class='bx bx-link'></i>
+                    <a id="userBlog" href="" target="_blank"></a>
+                </div>
+                <div class="detail-row" id="twitterRow" style="display: none;">
+                    <i class='bx bxl-twitter'></i>
+                    <a id="userTwitter" href="" target="_blank"></a>
+                </div>
+                <div class="detail-row">
+                    <i class='bx bx-calendar'></i>
+                    <span>Joined: <span id="userJoined"></span></span>
+                </div>
+            </div>
+
+            <a id="githubLink" href="" target="_blank" class="github-link">
+                <i class='bx bxl-github'></i>
+                View Profile on GitHub
+            </a>
+        </div>
+        
     </div>
 
     <script src="./script.js"></script>
